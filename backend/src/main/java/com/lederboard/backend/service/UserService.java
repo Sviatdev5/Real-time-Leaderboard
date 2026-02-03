@@ -1,3 +1,4 @@
+package com.lederboard.backend.service;
 import org.springframework.stereotype.Service;
 
 import com.lederboard.backend.Entity.User;

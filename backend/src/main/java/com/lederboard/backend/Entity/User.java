@@ -3,6 +3,8 @@ import java.util.UUID;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -32,4 +34,9 @@ public class User{
 
     @Column(name = "total_score", nullable = false)
     private Long totalScore = 0L;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+
 }
